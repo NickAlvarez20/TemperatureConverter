@@ -30,10 +30,10 @@ func main(){
 	fmt.Scanln(&temperature)
 		fmt.Print("Enter C or F: ")
 	fmt.Scanln(&unit)
-	if unit != "C" && unit != "F"{
+	if unit != "C" && unit != "F" && unit != "c" && unit != "f"{
 		fmt.Println("Error: Invalid Unit")
 		return
-	} else if unit == "F" || unit == "f"{
+	} else if unit == "F" && unit == "f"{
 		fmt.Println(convertF2C(temperature, unit))
 	} else{
 		fmt.Println(convertC2F(temperature, unit))
