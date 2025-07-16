@@ -36,7 +36,6 @@ func main(){
 	} else if unit == "F" || unit == "f"{
 		fmt.Println(convertF2C(temperature, unit))
 	} else{
-		fmt.Println(convertF2C(temperature, unit))
+		fmt.Println(convertC2F(temperature, unit))
 	}	
-	// Updated 
 }
