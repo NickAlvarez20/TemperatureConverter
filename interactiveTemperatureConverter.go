@@ -24,7 +24,7 @@ func convertF2C(temperature float64, unit string) string{
 
 
 func main(){
-	var temperature float64 // Declare a variable to store the input
+	var temperature float64 // Declare a variable to store the input for the temperature
 	var unit string // Declare a variable to store the input for the unit
 	fmt.Print("Enter temperature value: ")
 	fmt.Scanln(&temperature)
