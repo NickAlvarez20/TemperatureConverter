@@ -33,7 +33,7 @@ func main(){
 	if unit != "C" && unit != "F" && unit != "c" && unit != "f"{
 		fmt.Println("Error: Invalid Unit")
 		return
-	} else if unit == "F" && unit == "f"{
+	} else if unit == "F" || unit == "f"{
 		fmt.Println(convertFaren2Celcius(temperature, unit))
 	} else{
 		fmt.Println(convertCelcius2Faren(temperature, unit))
