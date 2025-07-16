@@ -5,7 +5,7 @@ import (
 )
 
 // Convert Celcius to Farenheit
-func convertC2F(temperature float64, unit string) string{
+func convertCelcius2Faren(temperature float64, unit string) string{
 	var conversion float64
 	if unit == "C" || unit == "c"{
 		conversion = (temperature*9/5)+32
@@ -14,7 +14,7 @@ func convertC2F(temperature float64, unit string) string{
 }
 
 // Convert Farenheit to Celcius
-func convertF2C(temperature float64, unit string) string{
+func convertFaren2Celcius(temperature float64, unit string) string{
 	var conversion float64
 	if unit == "F" || unit == "f"{
 		conversion = (temperature-32)*5/9
@@ -34,8 +34,8 @@ func main(){
 		fmt.Println("Error: Invalid Unit")
 		return
 	} else if unit == "F" && unit == "f"{
-		fmt.Println(convertF2C(temperature, unit))
+		fmt.Println(convertFaren2Celcius(temperature, unit))
 	} else{
-		fmt.Println(convertC2F(temperature, unit))
+		fmt.Println(convertCelcius2Faren(temperature, unit))
 	}	
 }
